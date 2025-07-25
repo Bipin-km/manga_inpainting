@@ -4,6 +4,7 @@ This repository contains the implementation of a lightweight Transformer-based U
 
 ---
 
+
 ## 🔍 Project Highlights
 
 - ⚡ **Tiny model**: Only \~790K parameters, optimized for training on limited compute.
@@ -21,6 +22,7 @@ This repository contains the implementation of a lightweight Transformer-based U
 ├── Notebook/
   ├── train.ipynb                  # Model definition and Training
   ├── test.ipynb                   # Evaluation (PSNR, SSIM)
+  ├── split.ipynb                  # Splitting and Visualizing the dataset
 ├── Results/                  # Inpainting results
 └── README.md                 # Project documentation
 ```
