@@ -54,11 +54,12 @@ This repository contains the implementation of a lightweight Transformer-based U
 
 ## 🧩 Model Components
 
-------------------------------------------------------------------------------------------------------|
-| **Encoder**            | Four convolutional blocks with Leaky ReLU and instance normalization extract hierarchical features from masked manga images. |
-| **Transformer Bottleneck** | A lightweight attention block processes compressed features, capturing global context efficiently. |
-| **Decoder**            |  Transposed convolutions upsample features. Skip connections from the encoder are averaged across channels (UNet--) to save memory. |
-| **Discriminator**      |  PatchGAN with 70×70 receptive field enforces local realism in inpainted regions. |
+| **Component**              | **Description**                                                                                                                                         |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Encoder**                | Four convolutional blocks with Leaky ReLU and instance normalization extract hierarchical features from masked manga images.                            |
+| **Transformer Bottleneck** | A lightweight attention block processes compressed features, capturing global context efficiently.                                                      |
+| **Decoder**                | Transposed convolutions upsample features. Skip connections from the encoder are averaged across channels (UNet--) to save memory.                      |
+| **Discriminator**          | PatchGAN with 70×70 receptive field enforces local realism in inpainted regions.                                                                        |
 
 
 - **Losses**:
