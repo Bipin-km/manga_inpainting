@@ -1,5 +1,4 @@
-# Manga Inpainting with Transformer-U-Net (T-Former)
-
+# Manga Inpainting with Memory-Efficient Transformer-U-Net Architecture
 This repository contains the implementation of a lightweight Transformer-based U-Net (T-former) architecture for the **semantic inpainting of manga images**. The model is trained on the Manga109-s dataset using structural annotations to preserve high-frequency edges such as lines, borders, and text regions.
 
 ---
