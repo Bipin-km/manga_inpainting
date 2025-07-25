@@ -4,6 +4,15 @@ This repository contains the implementation of a lightweight Transformer-based U
 
 ---
 
+## 👨‍💻 Authors
+
+- **Bipin Kumar Marasini**  
+  *Tribhuwan University, IOE, Nepal*
+
+- **Ramesh Kathayat**  
+  *Tribhuwan University, IOE, Nepal*
+
+
 ## 🔍 Project Highlights
 
 - ⚡ **Tiny model**: Only \~790K parameters, optimized for training on limited compute.
@@ -42,10 +51,14 @@ This repository contains the implementation of a lightweight Transformer-based U
 
 > **Figure:** Overview of the Transformer-U-Net (T-Former) architecture for manga inpainting.
 
-Encoder: Four convolutional blocks using Leaky ReLU activation and instance normalization extract hierarchical features from masked inputs.
-Transformer Bottleneck: A single lightweight attention block processes compressed features, capturing global context without memory explosion.
-Decoder: Transposed convolutions upsample the features. Skip connections from the encoder are averaged across channels (UNet--) to reduce memory footprint.
-Discriminator: A PatchGAN with 70x70 receptive field operates on local patches to enforce fine realism.
+## 🧩 Model Components
+
+------------------------------------------------------------------------------------------------------|
+| **Encoder**            | Four convolutional blocks with Leaky ReLU and instance normalization extract hierarchical features from masked manga images. |
+| **Transformer Bottleneck** | A lightweight attention block processes compressed features, capturing global context efficiently. |
+| **Decoder**            |  Transposed convolutions upsample features. Skip connections from the encoder are averaged across channels (UNet--) to save memory. |
+| **Discriminator**      |  PatchGAN with 70×70 receptive field enforces local realism in inpainted regions. |
+
 
 - **Losses**:
   - `L1` loss for pixel accuracy
